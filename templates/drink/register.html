@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/static/css/form.css">
+    <script src="/static/lib/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+   <div class="container">
+          <form class="form-signin" role="form" method="POST">
+        <h2 class="form-signin-heading">X X X 管理系统</h2> <!-- Please sign in -->
+              {% csrf_token %}
+             {{ form.username }}
+              {{ form.password }}
+        <div class="checkbox">
+          <label>
+            <input value="remember-me" type="checkbox"> 记住我
+          </label>
+          <span class='left'><a href='/drink/login/' >已有账号点击这里登录</a></span>
+        </div>
+        <div> {{ status }}</div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">注 册</button>
+      </form>
+   </div>
+
+</body>
+</html>

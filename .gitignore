@@ -1,0 +1,8 @@
+.DS_Store
+
+# Windows ignore
+**/Include
+**/Scripts
+**/tcl
+
+**/.idea
